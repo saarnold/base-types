@@ -22,3 +22,6 @@ Vizkit::UiLoader.register_3d_plugin('SonarBeamVisualization', "base", 'SonarBeam
 Vizkit::UiLoader.register_3d_plugin_for('SonarBeamVisualization', "/base/samples/SonarBeam", :updateSonarBeam)
 Vizkit::UiLoader.register_3d_plugin('DepthMapVisualization', "base", 'DepthMapVisualization')
 Vizkit::UiLoader.register_3d_plugin_for('DepthMapVisualization', "/base/samples/DepthMap", :updateDepthMap)
+Vizkit::UiLoader.register_3d_plugin('VectorFieldVisualization', "base", 'VectorFieldVisualization')
+Vizkit::UiLoader.register_3d_plugin_for('VectorFieldVisualization', "/base/Vector3d", :updateData)
+Vizkit::UiLoader.register_3d_plugin_for('VectorFieldVisualization', "/base/samples/RigidBodyState", :updateOrigin)

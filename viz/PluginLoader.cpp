@@ -8,6 +8,8 @@
 #include "PointcloudVisualization.hpp"
 #include "SonarBeamVisualization.hpp"
 #include "DepthMapVisualization.hpp"
+#include "VectorFieldVisualization.hpp"
+
 
 namespace vizkit3d {
     class QtPluginVizkit : public vizkit3d::VizkitPluginFactory {
@@ -34,6 +36,7 @@ namespace vizkit3d {
 	    pluginNames->push_back("PointcloudVisualization");
 	    pluginNames->push_back("SonarBeamVisualization");
 	    pluginNames->push_back("DepthMapVisualization");
+	    pluginNames->push_back("VectorFieldVisualization");
 	    return pluginNames;
 	}
 	
@@ -74,7 +77,11 @@ namespace vizkit3d {
 	    }
 	    else if (pluginName == "DepthMapVisualization")
 	    {
-		plugin = new vizkit3d::DepthMapVisualization();
+		    plugin = new vizkit3d::DepthMapVisualization();
+        }
+	    else if (pluginName == "VectorFieldVisualization")
+	    {
+		    plugin = new vizkit3d::VectorFieldVisualization();
 	    }
 
 	    if (plugin) 

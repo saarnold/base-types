@@ -11,6 +11,7 @@ rock_vizkit_plugin(base-viz
         SonarBeamVisualization.cpp
         PointcloudVisualization.cpp
         DepthMapVisualization.cpp
+        VectorFieldVisualization.cpp
     HEADERS 
         Uncertainty.hpp 
         Vizkit3DHelper.hpp 
@@ -24,5 +25,6 @@ rock_vizkit_plugin(base-viz
         SonarBeamVisualization.hpp
         PointcloudVisualization.hpp
         DepthMapVisualization.hpp
+        VectorFieldVisualization.hpp
         LIBS base ${Boost_SYSTEM_LIBRARY}
 )
