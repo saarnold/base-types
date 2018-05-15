@@ -1,0 +1,27 @@
+<package format="2">
+  <name>rock-types</name>
+  <version>0.0.0</version>
+  <description>Base types for robotic infrastructures.</description>
+
+  <maintainer email="sylvain.joyeux@m4x.org">Sylvain Joyeux</maintainer>
+  <author     email="robotik@dfki.de">DFKI</author>
+  <author     email="sylvain.joyeux@m4x.org">Sylvain Joyeux</author>
+
+  <license>LGPL v2 or later</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+
+  <build_depend>rock-cmake</build_depend>
+
+  <depend>eigen3</depend>
+  <depend>boost</depend>
+  <depend>rock-logging</depend>
+  <depend>sisl</depend>
+
+  <doc_depend>doxygen</doc_depend>
+
+  <export>
+    <build_type>cmake</build_type>
+  </export>
+</package>
+
